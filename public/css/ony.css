@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    margin: 0;
+    background: #ddd;
+}
+
+.body-home {
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    margin: 0;
+    background: #ddd;
+    overflow: hidden;
+}
+
+/* Header/Blog Title */
+.home {
+    padding: 248px 250px;
+    color: #444444;
+    background-image: url("../img/hero-home.jpg");
+    background-size: 100% 100%;
+    float: right;
+}
+
+.button-home {
+    padding: 7px 30px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: solid black 2px;
+    text-decoration: none;
+    color: black;
+}
+
+.button-home:hover {
+    padding: 7px 30px;
+    border-radius: 30px;
+    background-color: #ddd;
+    cursor: pointer;
+    border: solid black 2px;
+}
+
+.header {
+    padding: 170px 250px;
+    background-image: url("../img/hero1.jpg");
+    background-size: 100% 135%;
+    color: #444444;
+}
+
+.header h1 {
+    font-weight: bold;
+    color: #444;
+    font-size: 45px;
+}
+
+.header .nama {
+    font-weight: 300;
+    color: #444;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+/* Style the topnav links */
+.topnav {
+    padding: 10px 70px;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 17px;
+}
+
+.topnav h2#logo {
+    float: left;
+    display: block;
+    color: #444444;
+    font-family: "Crete Round", serif;
+}
+
+/* Change color on hover */
+.active,
+.topnav a:hover {
+    /*background-color: gray;*/
+    opacity: 70%;
+    color: #000;
+    border-radius: 30px;
+    border: solid black 2px;
+}
+
+.topnav a#logo:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.cta {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    border-radius: 50%;
+    margin-left: -50px;
+    margin-top: -25px;
+    border: none;
+    color: white;
+    background: #ddd url(../img/icons/down-arrow.png) 15px 15px no-repeat;
+    background-size: 40% 40%;
+}
+
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 100%;
+}
+
+/* Fake image */
+.fakeimg {
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 50px 200px;
+}
+
+.card .card_logo {
+    float: left;
+    width: 100px;
+    margin-left: 6%;
+}
+
+.card#card1 {
+    background-color: #f5f5f5;
+}
+
+.card#card3 {
+    background-color: #f5f5f5;
+    padding-bottom: 130px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+.blok {
+    background-color: #ddd;
+    float: left;
+    padding: 1% 13%;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/*Sticky nav*/
+.content {
+    /*padding: 16px;*/
+    padding: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
